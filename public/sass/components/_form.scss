@@ -1,0 +1,45 @@
+input {
+    outline: none;
+
+    &:focus:invalid {
+        border: 2px solid $color-error;
+    }
+
+    &::-webkit-input-placeholder { 
+        color: $color-grey-light-3;
+        transition: opacity .3s;
+    }
+
+    &:focus::-webkit-input-placeholder {
+        opacity: 0;
+    }
+
+    &:-ms-input-placeholder { 
+        color: $color-grey-light-3;
+        transition: opacity .3s;
+    }
+
+    &:focus:-ms-input-placeholder {
+        opacity: 0;
+    }
+
+    &::-moz-placeholder { 
+        color: $color-grey-light-3;
+        opacity: 1;
+        transition: opacity .3s;
+    }
+
+    &:focus::-moz-placeholder {
+        opacity: 0;
+    }
+
+    &:-moz-placeholder { 
+        color: $color-grey-light-3;
+        opacity: 1;
+        transition: opacity .3s;
+    }
+
+    &:focus:-moz-placeholder {
+        opacity: 0;
+    }
+}
